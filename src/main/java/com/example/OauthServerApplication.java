@@ -1,0 +1,17 @@
+package com.example;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * @author john
+ * @date 2020/1/13 - 10:40
+ */
+@SpringBootApplication
+@MapperScan("com.example.mapper")
+public class OauthServerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OauthServerApplication.class, args);
+    }
+}

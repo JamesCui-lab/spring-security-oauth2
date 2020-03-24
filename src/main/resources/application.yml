@@ -1,0 +1,17 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?userUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root123
+  main:
+    allow-bean-definition-overriding: true # 这个表示允许我们覆盖OAuth2放在容器中的bean对象，一定要配置
+mybatis:
+  type-aliases-package: com.example.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.example: debug
